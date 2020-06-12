@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+.white_board {
+    width: 100%;
+    height: 100%;
+    border: 15px solid #454D53;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#board_title_container {
+    width: auto;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+#board_title {
+    text-align: center;
+    text-decoration: underline;
+    font: Bold 50px Arial;
+    letter-spacing: 0px;
+    color: #696060;
+}

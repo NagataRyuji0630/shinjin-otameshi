@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./todo_white_board.css">
+    <script src="./constants.js"></script>
+    <script src="./domAction.js"></script>
+    <script src="./todoWhiteBoard.js"></script>
+    <title>Todo White Board</title>
+</head>
+
+<body>
+    <div class="white_board display_flex_justify direction_colum">
+
+        <div id="board_title_container" class="display_flex_align">
+            <div id="board_title">TO DO LIST</div>
+        </div>
+
+        <div id="form_container" class="display_flex_justify direction_colum">
+
+            <div class="input_content display_flex_all direction_row">
+                <div class="input_title display_flex_all">TITLE</div>
+                <div id="todo_input_area" class="display_flex_all">
+                    <input class="blue_form" id="todo_title" type="text" placeholder="title" />
+                </div>
+            </div>
+
+            <div class="input_content display_flex_all direction_row">
+                <div class="input_title display_flex_all">TODO</div>
+                <div id="detail_input_area" class="display_flex_all">
+                    <textarea class="blue_form" id="todo_detail"></textarea>
+                </div>
+
+            </div>
+
+            <div id="btn_container" class="display_flex_align">
+                <div class="btn red_btn display_flex_all" id="todo_add_btn">
+                    <div class="btn_text">ADD</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="todo_list_container"></div>
+    </div>
+</body>
+
+</html>
