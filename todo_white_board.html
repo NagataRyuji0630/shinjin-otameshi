@@ -47,8 +47,11 @@
         <div id="todo_list_container"></div>
     </div>
     <script>
-        document.getElemntById("todo_add_btn").onclick=function(){
-
+        document.getElementById("todo_add_btn").onclick=function(){
+var title=todo_title.innerHTML;
+var detail=todo_detail.innerHTML;
+document.write(title);
+document.write(detail);
         }
     </script>
 </body>
