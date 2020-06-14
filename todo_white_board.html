@@ -48,14 +48,21 @@
     </div>
     <script>
         document.getElementById("todo_add_btn").onclick = function() {
-            var title = document.getElementById("todo_title");
-            var detail = document.getElementById("todo_detail");
+            var title = document.getElementById("todo_title").value;
+            var detail = document.getElementById("todo_detail").value;
 
             // console.log(title.innerHTML);
             // console.log(detail.innerHTML);
 
-            todo_list_container.innerHTML = title;
-            todo_list_container.innerHTML = detail;
+            var list = document.getElementById("todo_list_container");
+
+
+            list.innerHTML = title + detail;
+
+
+
+            // todo_list_container.innerHTML = detail;
+
 
 
         }
