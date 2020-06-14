@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
     <div class="white_board display_flex_justify direction_colum">
 
         <div id="board_title_container" class="display_flex_align">
@@ -48,11 +49,31 @@
     </div>
     <script>
         document.getElementById("todo_add_btn").onclick = function() {
-            var title = document.getElementById("todo_title");
-            var detail = document.getElementById("todo_detail");
+            const todoTag = (tagName, tagContent) => `
+        <div class="todo_tag">
+        <div class="white_circle"></div>
+        <div class="tag_title">${tagName}</div>
+        <div class="tag_content">${tagContent}</div>
+         </div>
+        `;
+            var title = document.getElementById("todo_title").value;
+            var detail = document.getElementById("todo_detail").value;
 
-            todo_list_container = document.write(title);
-            todo_list_container = document.write(detail);
+            // console.log(title.innerHTML);
+            // console.log(detail.innerHTML);
+
+            var list = document.getElementById("todo_list_container");
+
+
+            document.getElementById('todo_list_container').innerHTML = todoTag(title, detail);
+
+
+
+            // todo_list_container.innerHTML = detail;
+
+
+
+
         }
     </script>
 </body>
