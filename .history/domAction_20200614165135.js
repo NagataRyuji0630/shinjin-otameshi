@@ -7,8 +7,10 @@ function addFirstTodoTag(tagName, tagContent) {
 }
 
 // 付箋追加関数
-function addTodoTag(tagName, tagContent) {
-    let todoListContainer = document.getElementById("todo_list_container");
-
-    todoListContainer.insertAdjacentHTML('afterbegin', todoTag(tagName, tagContent));
+function addTodoTag(tagName, tagContent, todoTags) {
+    let lastNum = todoTags.length;
+    console.log(todoTags)
+    console.log(todoTags[lastNum - 1])
+    console.log(lastNum)
+    todoTags[lastNum - 1].insertAdjacentHTML('afterbegin', todoTag(tagName, tagContent));
 }
