@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="bootstrap-reboot.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="timeline.css">
 
     <style>
-        #canvas {
+        .canvas {
             background: #666666;
         }
     </style>
@@ -18,14 +18,17 @@
 
 <body>
 
-    <header>あなたの感想文-Text Editer</header>
+    <header>みんなの感想文-Time Line</header>
 
-    <canvas id="canvas" width="640" height="480"></canvas>
-
+    <div class="canvas"></div>
     <div class="userName">
-        ユーザー名
-    </div>
+        <ul>
+            <li>
+                ユーザー名
+            </li>
+        </ul>
 
+    </div>
     <script src="home.js">
         context.fillStyle = "blue";
         context.strokeRect(100, 10, 100, 50);

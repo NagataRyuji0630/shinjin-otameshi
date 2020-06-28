@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+    margin-top: 0px;
+    font-size: 2em;
+    color: #707070;
+    background-color: #F9EE89DB;
+}
+
+#title {
+    top: 1168px;
+    left: 392px;
+    width: 659px;
+    height: 74px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+#name {
+    top: 1292px;
+    left: 392px;
+    width: 659px;
+    height: 74px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+#sentence {
+    top: 1416px;
+    left: 392px;
+    width: 1152px;
+    height: 424px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+.userName {
+    margin-right: 350px;
+    width: 128px;
+    height: 38px;
+    text-align: center;
+    font: Regular 30px/38px Meiryo UI;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+    float: right;
+}
+
+.canvas {
+    margin-top: 70px;
+    margin-left: 89px;
+    width: 900px;
+    height: 550px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000008A;
+    border: 1px solid #707070;
+    opacity: 1;
+}
